@@ -11,13 +11,15 @@ nawyah/index.html       → /nawyah/
 biogear/index.html      → /biogear/
 galaxy-prince/index.html→ /galaxy-prince/   (أمير المجرة)
 my-lost-parts/index.html→ /my-lost-parts/
+insectmen-jungle/index.html → /insectmen-jungle/
 asmsam/index.html       → /asmsam/
 404.html                Shown for missing pages
 assets/css/theme.css    The shared theme (colours, fonts, every component)
 assets/js/site.js       Header, footer, project list, language switch, lightbox
-assets/img/<project>/   Web-ready images (WebP, resized)
+assets/img/<project>/   Web-ready images (WebP, resized) — generated from images/
 assets/img/og/          Social-share preview images (1200×630)
-Image/                  Original full-size artwork (not used by the pages)
+images/                 Original full-size artwork, one folder per project (not loaded by the pages)
+tools/build_images.py   Turns images/ originals into the web images in assets/img/
 ```
 
 ## Common edits
@@ -32,7 +34,9 @@ Image/                  Original full-size artwork (not used by the pages)
 - **Add a project** — copy one of the project folders, change the text and images, add a
   line to `PROJECTS` in `site.js`, add a card to `index.html`, and add the URL to
   `sitemap.xml`.
-- **New images** — export them as WebP around 1000–1600 px wide (keep each under ~300 KB)
-  and put them in `assets/img/<project>/`.
+- **New or changed images** — put the original in `images/<Project>/`, add a line for it to
+  `IMAGES` in `tools/build_images.py` (output name, source file, max size), then run
+  `python3 tools/build_images.py`. It writes the resized WebP to `assets/img/<project>/`;
+  reference that path in the page. Replacing an original and re-running updates the site image.
 
 Gallery images open full-size when wrapped in `<a href="..." data-lightbox="group-name">`.

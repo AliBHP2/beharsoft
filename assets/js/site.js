@@ -12,7 +12,8 @@ const PROJECTS = [
   { slug: 'nawyah',        en: 'Nawyah',         ar: 'النوية',         typeEn: 'Tank battle game', typeAr: 'لعبة معارك دبابات', thumb: '/assets/img/nawyah/tank-red.webp' },
   { slug: 'biogear',       en: 'Maher BioGear',  ar: 'ماهر بايوجير',  typeEn: 'Mobile shooter',   typeAr: 'لعبة جوال',          thumb: '/assets/img/biogear/icon.webp' },
   { slug: 'galaxy-prince', en: 'Galaxy Prince',  ar: 'أمير المجرة',   typeEn: 'Manga',            typeAr: 'مانجا',              thumb: '/assets/img/galaxy-prince/cover.webp' },
-  { slug: 'my-lost-parts', en: 'My Lost Parts',  ar: 'أجزائي المفقودة', typeEn: 'Illustrated story', typeAr: 'قصة مصوّرة',      thumb: '/assets/img/my-lost-parts/goro.webp' },
+  { slug: 'my-lost-parts', en: 'My Lost Parts',  ar: 'أجزائي المفقودة', typeEn: 'Puzzle game',      typeAr: 'لعبة ألغاز',       thumb: '/assets/img/my-lost-parts/goro.webp' },
+  { slug: 'insectmen-jungle', en: 'Insectmen Jungle', ar: 'Insectmen Jungle', typeEn: 'Action game', typeAr: 'لعبة أكشن',   thumb: '/assets/img/insectmen-jungle/title.webp' },
   { slug: 'asmsam',        en: 'Asmsam',         ar: 'الصمصام',       typeEn: 'Strategy game',    typeAr: 'لعبة استراتيجية',    thumb: '/assets/img/brand/gear.webp' },
 ];
 const CONTACT_EMAIL = 'hello@beharsoft.com';
